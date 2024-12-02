@@ -17,6 +17,7 @@ public class ClothingItem {
     private String season;
     private String imagePath;
 
+
     public Long getId() {
         return id;
     }
