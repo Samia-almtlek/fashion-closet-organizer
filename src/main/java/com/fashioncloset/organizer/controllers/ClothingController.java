@@ -57,6 +57,6 @@ public class ClothingController {
         String folderPath = "src/main/resources/static/images/";
         Path filePath = Paths.get(folderPath + image.getOriginalFilename());
         Files.copy(image.getInputStream(), filePath, StandardCopyOption.REPLACE_EXISTING);
-        return filePath.toString();
+        return "/images/" + image.getOriginalFilename();
     }
 }
